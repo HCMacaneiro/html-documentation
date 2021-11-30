@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+          <li><a class="nav-link" href=#Introduction>Introduction</a></li>
+          <li><a class="nav-link" href=#Elements>Elements</a></li>
+          <li><a class="nav-link" href=#Tags>Tags</a></li>
+          <li><a class="nav-link" href=#Attributes>Attributes</a></li>
+          <li><a class="nav-link" href=#DOM_trees>DOM trees</a></li>
+          <li><a class="nav-link" href=#References>References</a></li>
+        </ul>
+      </nav>
+      
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+              HTML (HyperText Markup Language) is the World Wide Web’s core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.
+            </p>
+            <p>
+              HTML is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation or functionality/behavior.
+            </p>
+            <p>
+              "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+            </p>
+            <p>
+              Some interesting facts about the history of HTML:
+              <ul>
+                <li>For its first five years (1990-1995), HTML went through a number of revisions and experienced a number of extensions, primarily hosted first at CERN, and then at the IETF.</li>
+                <li>In 2003, the publication of XForms, a technology which was positioned as the next generation of Web forms, sparked a renewed interest in evolving HTML itself, rather than finding replacements for it. This interest was borne from the realization that XML’s deployment as a Web technology was limited to entirely new technologies (like RSS and later Atom), rather than as a replacement for existing deployed technologies (like HTML).</li>
+                <li>In 2006, the W3C indicated an interest to participate in the development of HTML 5.0 after all, and in 2007 formed a working group chartered to work with the WHATWG on the development of the HTML specification. Apple, Mozilla, and Opera allowed the W3C to publish the specification under the W3C copyright, while keeping a version with the less restrictive license on the WHATWG site.</li>
+            </ul>
+            </p>  
+          </article>
+        </section>
+        <section class="main-section" id="Elements">
+          <header>Elements</header>
+          <article>
+            <p>
+              HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as &lthead&gt, &lttitle&gt, &ltbody&gt, &ltheader&gt, &ltfooter&gt, &ltarticle&gt, &ltsection&gt, &ltp&gt, &ltdiv&gt, &ltspan&gt, &ltimg&gt, &ltaside&gt, &ltaudio&gt, &ltcanvas&gt, &ltdatalist&gt, &ltdetails&gt, &ltembed&gt, &ltnav&gt, &ltoutput&gt, &ltprogress&gt, &ltvideo&gt, &ltul&gt, &ltol&gt, &ltli&gt and many others.
+            </p>
+            <p>
+              Important characteristics to remember about elements:
+              <ul>
+                <li>An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "&lt" and "&gt".</li>
+                <li>The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture.</li>
+            </ul>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Tags">
+          <header>Tags</header>
+          <article>
+            <p>
+              Each element is denoted in the source by a start tag, such as "&ltbody&gt", and an end tag, such as "&lt/body&gt".
+            </p>
+            <p>
+              Some examples of tags:
+             <code>&lttitle&gtSample page&lt/title&gt</code>
+                <code>&lth1&gtSample page&lt/h1&gt</code>
+                <code>&ltp&gtLorem ipsum&lt/p&gt</code>
+                </p>
+          </article>
+      </section>
+      <section class="main-section" id="Attributes">
+        <header>Attributes</header>
+        <article>
+          <p>
+            Elements can have attributes, which control how the elements work. In the example below, there is a hyperlink, formed using the &lta&gt element and its href attribute:  <code>&lta href="demo.html"&gtsimple&lt/a&gt</code>
+        </p>
+        <p>
+          Attributes are placed inside the start tag, and consist of a name and a value, separated by an "=" character. The attribute value can remain unquoted if it doesn’t contain space characters or any of " ' ` = &lt or &gt. Otherwise, it has to be quoted using either single or double quotes. The value, along with the "=" character, can be omitted altogether if the value is the empty string. For example: 
+            <code>&ltinput name=address disabled&gt</code>
+            <code>&ltinput name=address disabled=""&gt</code>
+      </p>
+      </article>
+      </section>
+      <section class="main-section" id="DOM_trees">
+        <header>DOM trees</header>
+        <article>
+        <p>
+          A DOM tree is an in-memory representation of a document.
+          DOM trees contain several kinds of nodes, in particular a DocumentType node, Element nodes, Text nodes, Comment nodes, and in some cases ProcessingInstruction nodes.
+          </p>
+          <p>
+            This DOM tree can be manipulated from scripts in the page. Scripts (typically in JavaScript) are small programs that can be embedded using the script element or using event handler content attributes.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <article>
+          <ul>
+            <li>All the information in this page is taken from 
+              <a href="https://www.w3.org/TR/html52/introduction.html#a-quick-introduction-to-html" target="_blank">w3.org</a> and 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN.</a></li>
+          </ul>
+        </article>
+      </section>
+      </main>
+</body>
+</html>
